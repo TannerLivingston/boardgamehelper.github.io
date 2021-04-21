@@ -50,3 +50,19 @@ html {
 .card {
     margin-bottom: 15px;
 }
+
+.shadowed {
+  -webkit-filter: drop-shadow(4px 4px 4px rgb(104, 104, 104));
+  filter:         drop-shadow(4px 4px 4px rgb(104, 104, 104)); 
+}
+
+.fa_custom {
+  color: dodgerblue;
+}
+
+.fade {
+  margin: 50px;
+  padding: 50px;
+  background-color: lightgreen;
+  opacity: 1;
+}

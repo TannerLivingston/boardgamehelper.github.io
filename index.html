@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" media="screen" href="css/header.css">
   <link rel="stylesheet" media="screen" href="css/main.css">
-  <link rel="stylesheet" media="screen" href="css/side_by_side.css">
   <link rel="stylesheet" media="screen" href="css/footer.css">
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -33,9 +32,9 @@
         <a class="navbar-brand" href="#">Board Game Helper</a>
       </div>
       <div class="header-right">
-        <a class="active"><a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact Us</a>
+        <a class="active" href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
       </div>
     </div>
   </nav>
@@ -44,7 +43,9 @@
     
     <div class="section content">
       <h1>Board Game Helper</h1>
-      <p>Improve your board game playing experience with Board Game Helper</p>
+      <p class="main-content">When playing a board game there are a lot of issues that can arise from too many pieces.
+        We aim to make the tabletop experience easier by cutting down on the amount of these pieces
+        required, creating a better experience for everyone.</p>
     </div>
 
     <div class="embed-responsive embed-responsive-16by9 content">
@@ -55,55 +56,63 @@
       </iframe>
     </div>
 
+    <div class="jumbotron jumbotron-fluid section">
+      <div class="container justify-content-center align-items-center text-center">
+        <h1>Try it out!</h1>
+        <p class="main-content">Download the Android APK and give our application a try!</p>
+        <a href="https://drive.google.com/file/d/1azQQgZFRzDXJn4AYd09QJjBgdEXfvKIa/view?usp=sharing"
+          type="button" class="btn btn-primary btn-lg">Download</a>
+      </div>
+    </div>
 
-    <div class="container section content">
-      <div>
-        <h1 id="about">Getting Started</h1>
-      </div>
+
+    <div class="container section content" id="about">
       <div class="row justify-content-center align-items-center text-center">        
-          <div class="col-md-6 col-xs-6">
-              <img src="images/phone.png" style="width: 60%;"/>
-          </div>
-          <div class="col-md-6 col-xs-6">
-            <h1>Create</h1>      
-            <p>Design game profiles for your favorite board games with our mobile app.
-              Our system allows you to replace game pieces like dice, timers, notes, and counters with
-              easy-to-use digital counterparts. Digitize as many or as few game pieces as you like to
-              simplify your board game playing experience.
-            </p>
-          </div>
-      </div>
-    </div> 
-    <div class="container">
-      <div class="row justify-content-center align-items-center text-center">         
         <div class="col-md-6 col-xs-6">
-          <h1>Play</h1>      
-          <p>Select a game profile you've created, and play offline or online with friends in real-time. The intuitive interface lets you tap to
-            roll dice, change turns and gamestates, secretly write notes to your team that only they can see, increment your money counter, and more.
+          <h1>Create</h1>      
+          <p class="main-content">Design game profiles for your favorite board games with our mobile app.
+            Our system allows you to replace game pieces like dice, timers, notes, and counters with
+            easy-to-use digital counterparts. Digitize as many or as few game pieces as you like to
+            simplify your board game playing experience.
           </p>
         </div>
         <div class="col-md-6 col-xs-6">
-            <img src="images/phone.png" style="height: 700px;"/>
+            <img class="img-fluid" src="images/phone.png"/>
         </div>
       </div>
     </div> 
-    <div class="container">
-      <div class="row justify-content-center align-items-center text-center">        
+    <div class="container section content">
+      <div class="row justify-content-center align-items-center text-center">         
         <div class="col-md-6 col-xs-6">
-            <img src="images/phone.png" style="height: 700px;"/>
+          <img class="img-fluid" src="images/phone.png"/>
         </div>
         <div class="col-md-6 col-xs-6">
+          <h1>Play</h1>      
+          <p class="main-content">Select a game profile you've created, and play offline or online with friends in real-time. The intuitive interface lets you tap to
+            roll dice, change turns and gamestates, secretly write notes to your team that only they can see, increment your money counter, and more.
+          </p>
+        </div>
+      </div>
+    </div> 
+    <div class="container section content">
+      <div class="row justify-content-center align-items-center text-center">
+        <div class="col-md-6 col-xs-6">
           <h1>Share</h1>      
-          <p>Create your own account and sign in to save your game profiles to the cloud for safekeeping.
+          <p class="main-content">Create your own account and sign in to save your game profiles to the cloud for safekeeping.
             Share your unique game profile codes with friends so they can download your profiles for their
             own personal use.
           </p>
         </div>
+        <div class="col-md-6 col-xs-6">
+          <img class="img-fluid" src="images/phone.png"/>
+        </div>
       </div>
-    </div>  
+    </div>
+
+
 
   <div id="footer" class="justify-content-center align-items-center text-center footer">
-    <p>&copy;2021 Board Game Helper</P>
+    <p style="font-size: small;">&copy;2021 Board Game Helper</p>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

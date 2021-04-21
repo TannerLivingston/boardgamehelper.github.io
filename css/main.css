@@ -22,6 +22,12 @@
     margin: auto;
 }
 
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1300px;
+    }
+}
+
 .section {
     padding: 2rem 0rem;
     margin-top: 1rem;
@@ -30,4 +36,17 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+.main-content {
+    font-size: x-large;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+.card {
+    margin-bottom: 15px;
 }

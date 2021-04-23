@@ -66,3 +66,9 @@ html {
   background-color: lightgreen;
   opacity: 1;
 }
+
+.profile-picture {
+  border-radius: 0%;
+  vertical-align: middle;
+  align-items: center;
+}

@@ -18,49 +18,59 @@
 </head>
 <body>
 
-<nav class="navbar header">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/LogoNoBack.png" width="40" height="40">
-            </a>
+    <nav class="navbar header">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo60x60.png" width="60" height="60">
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="index.html">Home</a>
+                <a class="active" href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
         </div>
-        <div class="header-right">
-            <a href="index.html">Home</a>
-            <a class="active" href="about.html">About</a>
-            <a href="contact.html">Contact Us</a>
-          </div>
-    </div>
-</nav>
+    </nav>
 
+
+    <div class="container section content">
+        <h1>System Architecture</h1>
+        <p class="main-content">
+            Board Game Helper is an Android mobile application developed with Xamarin and C#. The mobile application supports many offline features,
+            such as game profile creation and play. However, the app's full potential is realized through its online features, which include
+            cloud storage of game profiles, managing personal profiles saved to the cloud with an authentication system, and playing games online
+            in real-time. These online features are supported by a server developed with C# and ASP.NET Web API, hosted on Azure, along with a Microsoft
+            SQL database. User authentication is handled with Google Firebase. Here is a very simple illustration of this architecture at a high level:
+        </p>
+        
+        <img src="images/Simple.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+        
+        <p class="main-content"> Game profile saving, updating, and retrieving is accomplished through HTTP requests the mobile app makes to the server's API,
+            while real-time online play leverages the speed of SignalR. Here is a more detailed overview of the system's architecture:
+        </p>
+
+        <img src="images/Architecture.png" style="width: 100%;">
+    </div>
 
     <div class="container section content">
         <h1>Technology Platforms</h1>
-        <p class="main-content">
-            Board Game Helper is an Android mobile application developed with the following languages and technologies:
-        </p>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">C#</li>
-            <li class="list-group-item">Xamarin</li>
-            <li class="list-group-item">SignalR</li>
-        </ul>
+        <div class="entry-content main-content">
+            <p>Here is concise list of the primary technologies used:</p>
+            <ul>
+            <li>C#</li>
+            <li>Xamarin</li>
+            <li>SignalR</li>
+            <li>ASP.NET</li>
+            <li>Google Firebase</li>
+            <li>Azure</li>
+            <li>Microsoft SQL</li>
+            <li>Postman (API testing)</li>
+            <li>GitLab (version control, issue management)</li>
+            </ul>
+        </div>
     </div>
-    <div class="container section content">
-        <p class="main-content">
-            The Server and database are hosted on Azure. It has an API for handling game profile saving, updating, and loading, as well as an engine for managing
-            concurrent multiplayer games in real-time. It was developed with the following languages and technologies:
-        </p>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">C#</li>
-            <li class="list-group-item">ASP.NET</li>
-            <li class="list-group-item">SignalR</li>
-            <li class="list-group-item">Google Firebase</li>
-            <li class="list-group-item">Microsoft SQL</li>
-        </ul>
-    </div>
-    
-    </div>
-    <!-- /.container -->
+
 
     <div id="footer" class="justify-content-center align-items-center text-center footer">
         <p style="font-size: small;">&copy;2021 Board Game Helper</p>

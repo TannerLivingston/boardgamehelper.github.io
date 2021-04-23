@@ -3,13 +3,12 @@
 .header {
     overflow: hidden;
     background-color: dodgerblue;
-    padding: 20px 10px;
   }
   
   /* Style the header links */
   .header a {
     float: left;
-    color: black;
+    color: white;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -34,6 +33,7 @@
   .header a.active {
     background-color: dodgerblue;
     color: white;
+    font-weight: bold;
   }
   
   /* Float the link section to the right */

@@ -35,11 +35,12 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .main-content {
     font-size: x-large;
+    color: black;
 }
 
 .card-horizontal {
@@ -71,4 +72,8 @@ html {
   border-radius: 0%;
   vertical-align: middle;
   align-items: center;
+}
+
+.mygradient {
+  background: linear-gradient(to bottom, white, 85%, rgb(0, 217, 255));
 }
